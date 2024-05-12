@@ -28,7 +28,7 @@ DID_202_IV = b'\x00' * 16
 
 # Confirmed working on the following versions
 APPLICATION_VERSIONS = {
-    b'\x018965B4209000\x00\x00\x00\x00': b'\x01!!!!!!!!!!!!!!!!', # Rav4 Prime
+    b'\x018965B1613000\x00\x00\x00\x00': b'\x01!!!!!!!!!!!!!!!!', # Rav4 Prime
     b'\x018965B4509100\x00\x00\x00\x00': b'\x01!!!!!!!!!!!!!!!!', # Sienna
 }
 
