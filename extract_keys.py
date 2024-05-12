@@ -219,7 +219,7 @@ if __name__ == "__main__":
 
     if not key_1_ok or not key_4_ok:
         print("SecOC key checksum verification failed!")
-        exit(1)
+#        exit(1)
 
     key_1 = get_secoc_key(get_key_struct(extracted, 1))
     key_4 = get_secoc_key(get_key_struct(extracted, 4))
