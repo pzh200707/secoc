@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     if app_version not in APPLICATION_VERSIONS:
         print("Unexpected application version!", app_version)
-        exit(1)
+#        exit(1)
 
     # Mandatory flow of diagnostic sessions
     uds_client.diagnostic_session_control(SESSION_TYPE.DEFAULT)
@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     if bl_version != APPLICATION_VERSIONS[app_version]:
         print("Unexpected bootloader version!", bl_version)
-        exit(1)
+#        exit(1)
 
     # Go back to programming session
     uds_client.diagnostic_session_control(SESSION_TYPE.PROGRAMMING)
