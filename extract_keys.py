@@ -123,10 +123,10 @@ if __name__ == "__main__":
     print(" - Write data by identifier 0x202", DID_202_IV.hex())
     uds_client.write_data_by_identifier(0x202, DID_202_IV)
 
-    # Request download to RAM
-    data = b"\x01" # [1] Format
+    # Request download to RAM, modified to 0x2
+    data = b"\x02" # [1] Format
     data += b"\x46" # [2] 4 size bytes, 6 address bytes
-    data += b"\x01" # [3] memoryIdentifier
+    data += b"\x02" # [3] memoryIdentifier
     data += b"\x00" # [4]
     data += struct.pack('!I', 0xfebf0000) # [5] Address
     data += struct.pack('!I', 0x1000) # [9] Size
